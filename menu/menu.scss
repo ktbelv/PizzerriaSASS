@@ -1,0 +1,816 @@
+$color: rgb(255, 204, 0);
+
+body{
+    margin: 0px;
+
+    #containerBig{
+        width: 100%;
+        color: white;
+        font-family: 'Poppins', sans-serif;
+
+        header{
+            width:100%;
+            height: 12%;
+            background-color: black;
+            position: absolute;
+            top: 0px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            z-index: 10;
+            font-family: 'Poppins', sans-serif;
+            
+            @media(max-width: 600px){
+                font-size: 12px;
+            }
+            a{
+                color: white;
+                text-decoration: none;
+            }
+            .menu :hover{
+                color: $color;
+            }
+            .logo-block{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                color: white;
+                position: relative;
+                height: 40px;
+                width: 100px;
+                text-align: right;
+                
+    
+                 :nth-child(2){
+                    font-family: 'Josefin Sans', sans-serif; 
+                    font-size: 20px;
+                    margin-right: 3px;
+    
+                    @media(max-width: 600px){
+                        font-size: 14px;
+                    }
+                }
+                 :nth-child(3){
+                    font-size: 10px;
+                    color: $color;
+                    letter-spacing: 3px;
+    
+                    @media(max-width: 600px){
+                        font-size: 10px;
+                        letter-spacing: 1px;
+                    }
+                }
+                .logo{
+                    position: absolute;
+                    height: 23px;
+                    width: 25px;
+                    left: 22px;
+                    top: 0px;
+    
+                    @media(max-width: 600px){
+                        height: 18px;
+                        width: 18px;
+                        left: 15px;
+                    }
+    
+                    @media (min-width: 600px)and(max-width: 700px){
+                        height: 18px;
+                        width: 18px;
+                        left: 20px;
+                    }
+                }
+                
+            }
+            .menu-block{
+                width: 500px;
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                color: white;
+            }
+        }
+
+        main{
+
+            #container1{
+                width: 100%;
+                height: 100vh;
+                background-image: url(/graphicMaterials/bg_4.jpg);
+                background-repeat: no-repeat;
+                background-size: cover;
+                display: flex;
+                flex-direction: column;
+
+                #blockH1{
+                    padding-top: 7%;
+                    width: 100%;
+                    height: 40%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+
+                    @media(max-width: 1072px){
+                        width: 100vw;
+                        height: 20%;
+                    } 
+
+                    #containerH1{
+                        width: 50%;
+                        height: 45%;
+                        display: flex;
+                        align-items: center;
+                        flex-direction: column;
+                        justify-content: space-between;
+                        text-align: center;
+
+                        @media(max-width: 842px){
+                            height: 18%;
+                        }
+                        @media(max-width: 750px){
+                            height: 12%;
+                        }
+                        @media(max-width: 652px){
+                            height: 1%;
+                            font-size: 18px;
+                        }
+                        #h{
+                            font-size: 35px;
+                            font-family: 'Josefin Sans', sans-serif;
+
+                            @media(max-width: 652px){
+                                font-size: 28px;
+                            }
+
+                            @media(max-width: 964px){
+                                margin-top: 15px;
+                            }
+                        }
+                        #textH{
+                            color: gray;
+                            @media(max-width: 1072px){
+                                font-size: 14px;
+                            } 
+
+                            @media(max-width: 842px){
+                                display: none;
+                            } 
+                        }
+                    }
+                }
+                #blockMenu{
+                    width: 100%;
+                    height: 60%;
+                    display: flex;
+                    position: relative;
+
+                    @media(max-width: 1072px){
+                        width: 100vw;
+                        height: 80%;
+                    } 
+
+                    #cover{
+                        background-color: black;
+                        opacity: 0.5;
+                        height: 100%;
+                        width: 100%;
+                    }
+                    #menu{
+                        width: 100%;
+                        height: 100%;
+                        z-index: 5;
+                        position: absolute;
+                        display: flex;
+                        align-items: center;
+
+                        @media(max-width: 1072px){
+                            flex-direction: column;
+                            top: 8.5%;
+                        }  
+
+                        #horyshontal{
+                            height: 100%;
+                            width: 80%;
+                            display: flex;
+                            flex-wrap: wrap;
+                            align-items: center;
+
+                            @media(max-width: 1072px){
+                                flex-direction: column;
+                                height: 70%;
+                                width: 95%;
+                            }                            
+
+                            .menuItemH{
+                                width: 50%;
+                                height: 50%;
+                                display: flex;
+                                box-sizing: border-box;
+
+                                @media(max-width: 1072px){
+                                    width: 40%;
+                                    height: 40%;
+                                } 
+
+                                .itemImg{
+                                    width: 50%;
+                                    height: 100%;
+
+                                    @media(max-width: 776px){
+                                        width: 70%;
+                                        height: 80%;
+                                    }
+
+                                    img{
+                                        width: 100%;
+                                        height: 100%;
+                                    }
+                                }
+                                .itemDesc{
+                                    width: 50%;
+                                    padding: 20px;
+                                    display: flex;
+                                    flex-direction: column;
+                                    justify-content: space-between;
+
+                                    #text{
+                                        color: gray;
+                                        font-size: 14px;
+
+                                        @media(max-width: 1072px){
+                                            display: none;
+                                        } 
+                                    }
+                                    #h2{
+                                        font-size: 16px;
+                                    }
+                                    #btContainer{
+                                        display: flex;
+                                        width: 100%;
+
+                                        .buttons{
+                                            button{
+                                                margin-left: 10px;
+                                                height: 30px;
+                                                width: 60px;
+                                                color: white;
+                                                border: 1px solid white;
+                                                background-color: transparent;
+                                                font-family: 'Poppins', sans-serif;
+                                                font-size: 14px;
+                                            }
+                                            :hover{
+                                                background-color: $color;
+                                                color: black;
+                                                border: black;
+                                                cursor: pointer;
+                                            }
+                                        }
+                                        
+                                        #price{
+                                            color: $color;
+                                            margin-top: 3px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        #vertical{
+                            height: 100%;
+                            width: 20%;
+                            display: flex;
+                            flex-direction: column;
+                
+                            @media(max-width: 1072px){
+                                flex-direction:row;
+                                width: 36%;
+                                height: 34%;
+                                position: absolute;
+                                bottom: 10%;
+                                left: 7.3%;
+                            } 
+
+                            @media(max-width: 776px){
+                                width: 38%;
+                                height: 30%;
+                                bottom: 13%;
+                            }
+
+                            @media(max-width: 569px){
+                                width: 41%;
+                                height: 30%;
+                                bottom: 13%;
+                            }
+
+                            .itemImgV{
+                                width: 100%;
+                                height: 50%;
+
+                                @media(max-width: 1072px){
+                                    height: 82%;
+                                } 
+
+                                img{
+                                    width: 100%;
+                                    height: 100%;
+                                }
+                            }
+
+                            .itemDeskV{
+                                width: 50%;
+                                padding: 20px;
+                                display: flex;
+                                flex-direction: column;
+                                justify-content: space-between;
+                                width: 100%;
+                                height: 50%;
+                                box-sizing: border-box;
+
+                                #text{
+                                    color: gray;
+                                    font-size: 14px;
+                                    @media(max-width: 1072px){
+                                        display: none;
+                                    } 
+                                }
+                                #h2{
+                                    font-size: 16px;
+
+                                    @media(max-width: 1072px){
+                                        margin-bottom: 20px;
+                                    } 
+                                }
+                                #btContainer{
+                                    display: flex;
+                                    width: 100%;
+
+                                    .buttons{
+                                         button{
+                                            margin-left: 10px;
+                                            height: 30px;
+                                            width: 60px;
+                                            color: white;
+                                            border: 1px solid white;
+                                            background-color: transparent;
+                                            font-family: 'Poppins', sans-serif;
+                                            font-size: 14px;
+                                        }
+                                        :hover{
+                                            background-color: $color;
+                                            color: black;
+                                            border: black;
+                                        }
+                                    }
+                                   
+                                    #price{
+                                        color: rgb(255, 204, 0);
+                                        margin-top: 3px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            #container2{
+                width: 100%;
+                height: 100vh;
+                background-image: url(/graphicMaterials/bg_4.jpg);
+                background-repeat: no-repeat;
+                background-size: cover;
+                display: flex;
+                flex-direction: column;
+
+                #blockH1{
+                    width: 100%;
+                    height: 40%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+
+                    #containerH1{
+                        width: 50%;
+                        height: 45%;
+                        display: flex;
+                        align-items: center;
+                        flex-direction: column;
+                        justify-content: space-between;
+                        text-align: center;
+
+                        #h{
+                            font-size: 35px;
+                            font-family: 'Josefin Sans', sans-serif;
+
+                            @media(max-width: 652px){
+                                font-size: 28px;
+                            }
+                        }
+                        #picture{
+                            width: 160px;
+                            height: 20px;
+                            display: flex;
+                            justify-content: space-between;
+                            align-items: center;
+                            margin-top: 20px;
+                            margin-bottom: 20px;
+
+                            .line{
+                                height: 1px;
+                                width: 50px;
+                                background-color:  $color;
+                                opacity: 0.7;
+                            }
+                            #starsBlock{
+                                display: flex;
+                                justify-content: space-between;
+                                align-items: center;
+
+                                .star{
+                                    background-color:  $color;
+                                    transform: rotate(45deg);
+                                    overflow: hidden;
+                                }
+                                #bigStar{
+                                    width: 10px;
+                                    height: 10px;
+                                    margin-left: 7px;
+                                    margin-right: 7px;
+                                }
+                                #smallStar{
+                                    width: 7px;
+                                    height: 7px;
+                                }
+                            }
+                        }
+                        #textH{
+                            color: gray;
+
+                            @media(max-width: 713px){
+                                font-size: 14px;
+                            }
+                            @media(max-width: 569px){
+                                display: none;
+                            }
+                        }
+                    }
+                }
+                #blockMenu{
+                    width: 100%;
+                    height: 60%;
+                    position: relative;
+                    display: flex;
+
+                    #left, #right{
+                        width: 50%;
+                        height: 100%;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        justify-content: space-between;
+                        padding: 20px;
+                        font-size: 14px;
+                        box-sizing: border-box;
+                    }
+                    #left{
+                        .pizzaBlock{
+                            height: 20%;
+                            width: 100%;
+                            display: flex;
+
+                            .pizzaImg{
+                                height: 100%;
+                                width: 13%;
+                                background-color: beige;
+                                border-radius: 50%;
+                                background-repeat: no-repeat;
+                                background-size: cover;
+                                margin-right: 15px;
+                            }
+                            #pizzaImg1{
+                                background-image: url(/graphicMaterials/pizza-1.jpg);
+                            }
+                            #pizzaImg2{
+                                background-image: url(/graphicMaterials/pizza-2.jpg);
+                            }
+                            #pizzaImg3{
+                                background-image: url(/graphicMaterials/pizza-3.png);
+                            }
+                            #pizzaImg4{
+                                background-image: url(/graphicMaterials/pizza-4.jpg);
+                            }
+                            .pizzaCont{
+                                height: 100%;
+                                width: 87%;
+                                display: flex;
+                                flex-direction: column;
+                                justify-content: space-around;
+
+                                .pizzaText{
+                                    color: grey;
+
+                                    @media(max-width: 551px){
+                                        display: none;
+                                    }
+                                }
+                                .pizzaHcont{
+                                    display: flex;
+                                    align-items: center;
+                                    justify-content: space-between;
+
+                                    .pizzaH{
+                                        font-size: 18px;
+                                        font-family: 'Josefin Sans', sans-serif;
+                                        border-bottom: dashed 1px $color;
+                                        width: 85%;
+                                    }
+                                    .pizzaPrice{
+                                        color:  $color;
+                                        margin-top: 10px;
+                                        font-size: 16px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    #right{
+
+                        .pizzaBlock{
+                            height: 20%;
+                            width: 100%;
+                            display: flex;
+
+                            .pizzaImg{
+                                height: 100%;
+                                width: 13%;
+                                background-color: beige;
+                                border-radius: 50%;
+                                background-repeat: no-repeat;
+                                background-size: cover;
+                                margin-right: 15px;
+                            }
+                            #pizzaImg5{
+                                background-image: url(/graphicMaterials/pizza-5.jpg);
+                            }
+                            #pizzaImg6{
+                                background-image: url(/graphicMaterials/pizza-6.jpg);
+                            }
+                            #pizzaImg7{
+                                background-image: url(/graphicMaterials/pizza-7.jpg);
+                            }
+                            #pizzaImg8{
+                                background-image: url(/graphicMaterials/pizza-8.jpg);
+                            }
+                            .pizzaCont{
+                                height: 100%;
+                                width: 87%;
+                                display: flex;
+                                flex-direction: column;
+                                justify-content: space-around;
+
+                                .pizzaText{
+                                    color: grey;
+
+                                    @media(max-width: 551px){
+                                        display: none;
+                                    }
+                                }
+                                .pizzaHcont{
+                                    display: flex;
+                                    align-items: center;
+                                    justify-content: space-between;
+
+                                    .pizzaH{
+                                        font-size: 18px;
+                                        font-family: 'Josefin Sans', sans-serif;
+                                        border-bottom: dashed 1px $color;
+                                        width: 85%;
+                                    }
+                                    .pizzaPrice{
+                                        color:  $color;
+                                        margin-top: 10px;
+                                        font-size: 16px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        footer{
+            height: 400px;
+            width: 84,5%;
+            background-color: black;
+            color: white;
+            padding: 70px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            font-family: 'Poppins', sans-serif;
+
+            @media(max-width: 968px){
+                font-size: 12px;
+            }
+            footer :hover{
+                color: $color;
+            }
+            
+            a{
+                color: white;
+                text-decoration: none;
+            }
+
+            #ftContext{
+                height: 65%;
+                width: 90%;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+                @media(max-width: 770px){
+                    width: 98%;
+                }
+            }
+            
+            #networks{
+                height: 40px;
+                width: 90%;
+                margin-top: 30px;
+                margin-bottom: 60px;
+                display: flex;
+
+                @media(max-width: 770px){
+                    display: none;
+                }
+
+                .net:hover{
+                    background-color: $color;
+                    cursor: pointer;
+                }
+
+                .net{
+                    width: 40px;
+                    height: 40px;
+                    border-radius: 50%;
+                    background-color: grey;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    margin-right: 15px;
+
+                    .netP{
+                        width: 60%;
+                        height: 60%;
+                        margin-left: 8px;
+                        margin-top: 5px;
+                    }
+                }
+            }
+
+            .itemFt{
+                width: 25%;
+                height: 100%;
+                color: white;
+
+                h2{
+                    font-size: 20px;
+                    margin-bottom: 40px;
+                }
+                #blockBlog2{
+                    padding-top: 10px;
+                }
+                .blockBlog{
+                    height: 130px;
+                    width: 100%;
+                    display: flex;
+                    #imgBlog1{
+                        background-image: url(/graphicMaterials/image_1.jpg);
+                        background-size: contain;
+                        background-repeat: no-repeat;
+                        @media(max-width: 878px){
+                            display: none;
+                        }
+                    }
+                    #imgBlog2{
+                        background-image: url(/graphicMaterials/image_2.jpg);
+                        background-size: contain;
+                        background-repeat: no-repeat;
+
+                        @media(max-width: 878px){
+                            display: none;
+                        }
+                    }
+                    .contextBlog{
+                        
+                         .hBlog{
+                            font-size: 12px;  
+                        }
+                        #hBlog2{
+                            @media(max-width: 877px){
+                                margin-top: 50px;
+                            }
+                            @media(max-width: 650px){
+                                margin-top: 10px;
+                            }
+                        }
+                        :hover{
+                            color: $color;
+                            cursor: pointer;
+                        }
+                        .commBlog{
+                            font-size: 12px;
+                            display: flex;
+                            color: grey;
+                            padding-top: 10px;
+                            justify-content: space-between;
+                            box-sizing: border-box; 
+
+                            @media(max-width: 650px){
+                                display: none;
+                            }
+                            .comm{
+                                display: flex;
+                            }
+                            .pictC{
+                                height: 10px;
+                                width: 10px; 
+                                margin-top: 3px;
+                                margin-right: 2px;
+                            }
+                        }
+                    }
+                   
+                    .imgBlog{
+                        width: 50%;
+                        height: 45%;
+                        margin-right: 10px;
+                    }
+                }
+                
+                #blockBlog2{
+                    margin-top: -40px;
+                }
+            }
+            #itemFt1{
+                h2 :hover{
+                    color: $color;
+                }
+            }
+            #itemFt2{
+                div :hover{
+                    color: $color;
+                }
+            }
+
+            #itemFt3{
+                width: 10%;
+                @media(max-width: 770px){
+                    display: none;
+                }
+
+                 :hover{
+                    color: $color;
+                }
+                .services{
+                    margin-bottom: 10px;
+                }
+            }
+            #itemFt4 {
+                h2{
+                    text-align: right;
+                    margin-right: 25px;
+                }
+                :hover{
+                    color: $color;
+                }
+
+                #mailto{
+                    @media(max-width: 770px){
+                        display: none;
+                    }
+                }
+                .q{
+                    display: flex;
+                    color: white;
+                    margin-bottom: 10px;
+                    display: flex;
+
+                    .fp{
+                        height: 15px;
+                        width: 15px;
+                        margin-top: 5px;
+                        margin-right: 15px;
+                    }
+                }
+            }
+            #rights{
+                font-size: 14px;
+                @media(max-width: 770px){
+                    display: none;
+                }
+            }
+        }
+    }
+}

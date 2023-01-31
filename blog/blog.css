@@ -1,0 +1,572 @@
+body {
+  margin: 0px;
+}
+body #mainCont {
+  width: 100%;
+}
+body #mainCont header {
+  width: 100%;
+  height: 12%;
+  background-color: black;
+  position: absolute;
+  top: 0px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  z-index: 10;
+  font-family: "Poppins", sans-serif;
+}
+@media (max-width: 600px) {
+  body #mainCont header {
+    font-size: 12px;
+  }
+}
+body #mainCont header a {
+  color: white;
+  text-decoration: none;
+}
+body #mainCont header .menu :hover {
+  color: rgb(255, 204, 0);
+}
+body #mainCont header .logo-block {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: white;
+  position: relative;
+  height: 40px;
+  width: 100px;
+  text-align: right;
+}
+body #mainCont header .logo-block :nth-child(2) {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 20px;
+  margin-right: 3px;
+}
+@media (max-width: 600px) {
+  body #mainCont header .logo-block :nth-child(2) {
+    font-size: 14px;
+  }
+}
+body #mainCont header .logo-block :nth-child(3) {
+  font-size: 10px;
+  color: rgb(255, 204, 0);
+  letter-spacing: 3px;
+}
+@media (max-width: 600px) {
+  body #mainCont header .logo-block :nth-child(3) {
+    font-size: 10px;
+    letter-spacing: 1px;
+  }
+}
+body #mainCont header .logo-block .logo {
+  position: absolute;
+  height: 23px;
+  width: 25px;
+  left: 22px;
+  top: 0px;
+}
+@media (max-width: 600px) {
+  body #mainCont header .logo-block .logo {
+    height: 18px;
+    width: 18px;
+    left: 15px;
+  }
+}
+@media (min-width: 600px) and (max-width: 700px) {
+  body #mainCont header .logo-block .logo {
+    height: 18px;
+    width: 18px;
+    left: 20px;
+  }
+}
+body #mainCont header .menu-block {
+  width: 500px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: white;
+}
+body #mainCont main {
+  width: 100%;
+  position: relative;
+  font-family: "Poppins", sans-serif;
+  margin: 0px;
+  background-color: url(../graphicMaterials/bg_4.jpg);
+  background-size: contain;
+}
+body #mainCont main #contacts {
+  height: 250px;
+  width: 100%;
+  top: 0px;
+  display: flex;
+}
+body #mainCont main #contacts #black {
+  width: 70%;
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 100px;
+  padding-left: 200px;
+}
+@media (max-width: 948px) {
+  body #mainCont main #contacts #black {
+    padding-left: 100px;
+  }
+}
+@media (max-width: 659px) {
+  body #mainCont main #contacts #black {
+    padding-left: 20px;
+    font-size: 14px;
+  }
+}
+body #mainCont main #contacts #black a {
+  color: white;
+  text-decoration: none;
+}
+body #mainCont main #contacts #black .nav :first-child {
+  display: flex;
+}
+body #mainCont main #contacts #black .nav {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+}
+body #mainCont main #contacts #black .nav :first-child :hover {
+  color: rgb(255, 204, 0);
+}
+body #mainCont main #contacts #black .nav .navText {
+  color: grey;
+  margin-top: 15px;
+  padding-left: 35px;
+}
+@media (max-width: 550px) {
+  body #mainCont main #contacts #black .nav .navText {
+    font-size: 10px;
+  }
+}
+body #mainCont main #contacts #black .nav .navP {
+  padding-top: 2px;
+  padding-right: 15px;
+  width: 20px;
+  height: 20px;
+}
+body #mainCont main #contacts #yellow {
+  width: 30%;
+  background-color: rgb(255, 204, 0);
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body #mainCont main #contacts #yellow #socCont {
+  display: flex;
+  width: 150px;
+  padding-top: 330px;
+  height: 100%;
+  margin-left: -115px;
+}
+@media (max-width: 1116px) {
+  body #mainCont main #contacts #yellow #socCont {
+    margin-left: 0px;
+  }
+}
+body #mainCont main #contacts #yellow #socCont .social {
+  height: 25px;
+  width: 25px;
+  margin-right: 15px;
+}
+body #mainCont main #container1 {
+  height: 640px;
+  width: 100%;
+  background-image: url(../graphicMaterials/bg_4.jpg);
+  display: flex;
+  position: relative;
+}
+body #mainCont main #container1 #pict1, body #mainCont main #container1 #context1 {
+  width: 50%;
+  height: 100%;
+}
+body #mainCont main #container1 #pict1 {
+  background-image: url(../graphicMaterials/about.jpg);
+  background-repeat: no-repeat;
+}
+@media (max-width: 615px) {
+  body #mainCont main #container1 #pict1 {
+    display: none;
+  }
+}
+body #mainCont main #container1 #context1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  padding-right: 100px;
+  padding-left: 100px;
+}
+@media (max-width: 615px) {
+  body #mainCont main #container1 #context1 {
+    padding-right: -120px;
+  }
+}
+body #mainCont main #container1 #context1 video {
+  height: 300px;
+  width: 200px;
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+}
+@media (max-width: 615px) {
+  body #mainCont main #container1 #context1 video {
+    display: none;
+  }
+}
+body #mainCont main #container1 #textCont {
+  text-align: justify;
+  color: grey;
+  margin-top: 30px;
+}
+@media (max-width: 615px) {
+  body #mainCont main #container1 #textCont {
+    font-size: 14px;
+  }
+}
+body #mainCont main #container1 #hCont {
+  font-size: 25px;
+  display: flex;
+}
+body #mainCont main #container1 #hCont img {
+  padding-top: 5px;
+  padding-left: 7px;
+  height: 25px;
+  width: 25px;
+}
+body #mainCont main #container2 {
+  width: 100%;
+  height: 100vh;
+  background-image: url(../graphicMaterials/bg_4.jpg);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+@media (max-width: 794px) {
+  body #mainCont main #container2 {
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+}
+body #mainCont main #container2 #blogH {
+  font-size: 25px;
+  margin-bottom: 30px;
+}
+body #mainCont main #container2 #textBlog {
+  text-align: center;
+  margin-bottom: 60px;
+  color: gray;
+}
+@media (max-width: 794px) {
+  body #mainCont main #container2 #textBlog {
+    font-size: 14px;
+  }
+}
+body #mainCont main #container2 #contextBlog {
+  height: 50%;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+@media (max-width: 794px) {
+  body #mainCont main #container2 #contextBlog {
+    flex-wrap: wrap;
+  }
+}
+body #mainCont main #container2 #contextBlog .article {
+  height: 100%;
+  width: 250px;
+}
+@media (max-width: 794px) {
+  body #mainCont main #container2 #contextBlog .article {
+    width: 170px;
+  }
+}
+body #mainCont main #container2 #contextBlog .article .articleImg {
+  height: 60%;
+  width: 100%;
+}
+@media (max-width: 794px) {
+  body #mainCont main #container2 #contextBlog .article .articleImg {
+    display: none;
+  }
+}
+body #mainCont main #container2 #contextBlog .article #aImg1 {
+  background-image: url(../graphicMaterials/image_1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+body #mainCont main #container2 #contextBlog .article #aImg2 {
+  background-image: url(../graphicMaterials/image_2.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+body #mainCont main #container2 #contextBlog .article #aImg3 {
+  background-image: url(../graphicMaterials/image_3.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+body #mainCont main #container2 #contextBlog .article .commBlog {
+  font-size: 14px;
+  height: 35px;
+  width: 250px;
+  color: grey;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 10px;
+}
+body #mainCont main #container2 #contextBlog .article .commBlog #admin {
+  display: none;
+}
+body #mainCont main #container2 #contextBlog .article .commBlog .comm {
+  display: flex;
+}
+@media (max-width: 794px) {
+  body #mainCont main #container2 #contextBlog .article .commBlog .comm {
+    font-size: 10px;
+  }
+}
+body #mainCont main #container2 #contextBlog .article .commBlog .picture .pictC {
+  height: 10px;
+  width: 10px;
+  margin-top: 5px;
+  margin-right: 2px;
+}
+@media (max-width: 794px) {
+  body #mainCont main #container2 #contextBlog .article .commBlog .picture {
+    display: none;
+  }
+}
+body #mainCont main #container2 #contextBlog .article .articleH {
+  font-size: 17px;
+  margin-bottom: 15px;
+}
+body #mainCont main #container2 #contextBlog .article .articleText {
+  font-size: 14px;
+  color: grey;
+  text-align: justify;
+}
+@media (max-width: 794px) {
+  body #mainCont main #container2 #contextBlog .article .articleText {
+    font-size: 12px;
+  }
+}
+body #mainCont footer {
+  height: 400px;
+  width: 84, 5%;
+  background-color: black;
+  color: white;
+  padding: 70px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Poppins", sans-serif;
+}
+@media (max-width: 968px) {
+  body #mainCont footer {
+    font-size: 12px;
+  }
+}
+body #mainCont footer footer :hover {
+  color: rgb(255, 204, 0);
+}
+body #mainCont footer a {
+  color: white;
+  text-decoration: none;
+}
+body #mainCont footer #ftContext {
+  height: 65%;
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@media (max-width: 770px) {
+  body #mainCont footer #ftContext {
+    width: 98%;
+  }
+}
+body #mainCont footer #networks {
+  height: 40px;
+  width: 90%;
+  margin-top: 30px;
+  margin-bottom: 60px;
+  display: flex;
+}
+@media (max-width: 770px) {
+  body #mainCont footer #networks {
+    display: none;
+  }
+}
+body #mainCont footer #networks .net:hover {
+  background-color: rgb(255, 204, 0);
+  cursor: pointer;
+}
+body #mainCont footer #networks .net {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: grey;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 15px;
+}
+body #mainCont footer #networks .net .netP {
+  width: 60%;
+  height: 60%;
+  margin-left: 8px;
+  margin-top: 5px;
+}
+body #mainCont footer .itemFt {
+  width: 25%;
+  height: 100%;
+  color: white;
+}
+body #mainCont footer .itemFt h2 {
+  font-size: 20px;
+  margin-bottom: 40px;
+}
+body #mainCont footer .itemFt #blockBlog2 {
+  padding-top: 10px;
+}
+body #mainCont footer .itemFt .blockBlog {
+  height: 130px;
+  width: 100%;
+  display: flex;
+}
+body #mainCont footer .itemFt .blockBlog #imgBlog1 {
+  background-image: url(../graphicMaterials/image_1.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+@media (max-width: 878px) {
+  body #mainCont footer .itemFt .blockBlog #imgBlog1 {
+    display: none;
+  }
+}
+body #mainCont footer .itemFt .blockBlog #imgBlog2 {
+  background-image: url(../graphicMaterials/image_2.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+@media (max-width: 878px) {
+  body #mainCont footer .itemFt .blockBlog #imgBlog2 {
+    display: none;
+  }
+}
+body #mainCont footer .itemFt .blockBlog .contextBlog .hBlog {
+  font-size: 12px;
+}
+@media (max-width: 877px) {
+  body #mainCont footer .itemFt .blockBlog .contextBlog #hBlog2 {
+    margin-top: 50px;
+  }
+}
+@media (max-width: 650px) {
+  body #mainCont footer .itemFt .blockBlog .contextBlog #hBlog2 {
+    margin-top: 10px;
+  }
+}
+body #mainCont footer .itemFt .blockBlog .contextBlog :hover {
+  color: rgb(255, 204, 0);
+  cursor: pointer;
+}
+body #mainCont footer .itemFt .blockBlog .contextBlog .commBlog {
+  font-size: 12px;
+  display: flex;
+  color: grey;
+  padding-top: 10px;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+@media (max-width: 650px) {
+  body #mainCont footer .itemFt .blockBlog .contextBlog .commBlog {
+    display: none;
+  }
+}
+body #mainCont footer .itemFt .blockBlog .contextBlog .commBlog .comm {
+  display: flex;
+}
+body #mainCont footer .itemFt .blockBlog .contextBlog .commBlog .pictC {
+  height: 10px;
+  width: 10px;
+  margin-top: 3px;
+  margin-right: 2px;
+}
+body #mainCont footer .itemFt .blockBlog .imgBlog {
+  width: 50%;
+  height: 45%;
+  margin-right: 10px;
+}
+body #mainCont footer .itemFt #blockBlog2 {
+  margin-top: -40px;
+}
+body #mainCont footer #itemFt1 h2 :hover {
+  color: rgb(255, 204, 0);
+}
+body #mainCont footer #itemFt2 div :hover {
+  color: rgb(255, 204, 0);
+}
+body #mainCont footer #itemFt3 {
+  width: 10%;
+}
+@media (max-width: 770px) {
+  body #mainCont footer #itemFt3 {
+    display: none;
+  }
+}
+body #mainCont footer #itemFt3 :hover {
+  color: rgb(255, 204, 0);
+}
+body #mainCont footer #itemFt3 .services {
+  margin-bottom: 10px;
+}
+body #mainCont footer #itemFt4 h2 {
+  text-align: right;
+  margin-right: 25px;
+}
+body #mainCont footer #itemFt4 :hover {
+  color: rgb(255, 204, 0);
+}
+@media (max-width: 770px) {
+  body #mainCont footer #itemFt4 #mailto {
+    display: none;
+  }
+}
+body #mainCont footer #itemFt4 .q {
+  display: flex;
+  color: white;
+  margin-bottom: 10px;
+  display: flex;
+}
+body #mainCont footer #itemFt4 .q .fp {
+  height: 15px;
+  width: 15px;
+  margin-top: 5px;
+  margin-right: 15px;
+}
+body #mainCont footer #rights {
+  font-size: 14px;
+}
+@media (max-width: 770px) {
+  body #mainCont footer #rights {
+    display: none;
+  }
+}/*# sourceMappingURL=blog.css.map */

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital@0;1&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital@0;1&family=Nothing+You+Could+Do&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="contact.css" />
+    </head>
+    <body>
+        <div id="containerBig">
+            <header>
+                <div class="logo-block">
+                    <img class="logo" src="../graphicMaterials/pizza1_orange.png">
+                    <div>Pizza</div>
+                    <div>DELICIOUS</div>
+                </div>
+                <div class="menu-block">
+                    <div class="menu"><a href="../main/main.html">Home</a></div>
+                    <div class="menu"><a href="../menu/menu.html">Menu</a></div>
+                    <div class="menu"><a href="../services/services.html">Services</a></div>
+                    <div class="menu"><a href="../blog/blog.html">Blog</a></div>
+                    <div class="menu"><a href="../blog/blog.html">About</a></div>
+                    <div class="menu"><a href="../contact/contact.html">Contact</a></div>
+                </div>
+            </header>
+            <main>
+                <div id="mapBlock">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d105733.19153194354!2d-118.43171912416373!3d34.09098412844076!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2bec5bd7240b1%3A0x8de101d1483b5c4d!2zNzkwMSBTYW50YSBNb25pY2EgQmx2ZCBVTklUIDEwNywgV2VzdCBIb2xseXdvb2QsIENBIDkwMDQ2LCDQodC_0L7Qu9GD0YfQtdC90ZYg0KjRgtCw0YLQuCDQkNC80LXRgNC40LrQuA!5e0!3m2!1suk!2sua!4v1668970646270!5m2!1suk!2sua"  style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <div id="formBlock">
+                    <div id="formCont">
+                        <div id="h1">Contact us</div>
+                        <form>
+                            <label for="get-name">Name:</label><br>
+                            <input id="get-name" type="text" required><br><br>
+
+                            <label for="get-last-name">Last Name:</label><br>
+                            <input id="get-last-name" type="text" required><br><br>
+
+                            <label for="message">Message:</label><br>
+                            <input id="message" type="text" required minlength="6"><br><br>  
+                            <div id="buttonCont">
+                                <input id="button" type="submit" value="Send">
+                            </div>
+                            <div id="confirm">Your message sent!</div>
+                        </form>
+                    </div>
+                </div>
+            </main>
+            <footer>
+                <div id="ftContext">
+                    <div class="itemFt" id="itemFt1">
+                        <h2><a href="../blog/blog.html">ABOUT US</a></h2>
+                        <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos non et, est necessitatibus quaerat accusamus quis odio facere, sapiente velit commodi provident. </div>
+                    </div>
+                    <div class="itemFt" id="itemFt2">
+                        <h2>RECENT BLOG</h2>
+                        <div class="blockBlog">
+                            <div class="imgBlog" id="imgBlog1"></div>
+                            <div class="contextBlog">
+                                <div class="hBlog"><a href="../blog/blog.html">Lorem ipsum dolor sit amet consectetur adipisicing elit</a></div>
+                                <div class="commBlog">
+                                    <div class="comm">
+                                        <img class="pictC" src="../graphicMaterials/calendar-icon.png">
+                                        <div>Sept 15, 2018</div>
+                                    </div>
+                                    <div class="comm">
+                                        <img class="pictC" src="../graphicMaterials/human-icon-white.png">
+                                        <div>Admin</div>
+                                    </div class="comm">
+                                    <div>
+                                        <img class="pictC" src="../graphicMaterials/message-icon-white.png">
+                                        <div>19</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="blockBlog" id="blockBlog2">
+                            <div class="imgBlog" id="imgBlog2"></div>
+                            <div class="contextBlog">
+                                <div class="hBlog"><a href="../blog/blog.html">Lorem ipsum dolor sit amet consectetur adipisicing elit</a></div>
+                                <div class="commBlog">
+                                    <div class="comm">
+                                        <img class="pictC" src="../graphicMaterials/calendar-icon.png">
+                                        <div>Sept 15, 2018</div>
+                                    </div>
+                                    <div class="comm">
+                                        <img class="pictC" src="../graphicMaterials/human-icon-white.png">
+                                        <div>Admin</div>
+                                    </div class="comm">
+                                    <div>
+                                        <img class="pictC" src="../graphicMaterials/message-icon-white.png">
+                                        <div>19</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="itemFt" id="itemFt3">
+                        <h2>SERVICES</h2>
+                        <div class="services"><a href="../services/services.html">Cooked</a></div>
+                        <div class="services"><a href="../servicesservices.html">Deliver</a></div>
+                        <div class="services"><a href="../services/services.html">Quality Foods</a></div>
+                        <div class="services"><a href="../services/services.html">Mixed</a></div>
+                    </div>
+                    <div class="itemFt" id="itemFt4">
+                        <h2>HAVE A QUESTIONS?</h2>
+                        <div class="q">
+                            <img class="fp" src="../graphicMaterials/location-pin_white.png">
+                            <div><a href="../contact/contact.html">203 Fake St. Montain View, San Francisco, California, USA</a></div>
+                        </div>
+                        <div class="q">
+                            <img class="fp" src="../graphicMaterials/phone_white.png">
+                            <div><a href="tel:+2 392 3929 210">+2 392 3929 210</a></div>
+                        </div>
+                        <div class="q" id="mailto">
+                            <img class="fp" src="../graphicMaterials/envelope_white.png">
+                            <div><a href="mailto:info@yourdomain.com">info@yourdomain.com</a></div>
+                        </div>
+                    </div>
+                </div>
+                <div id="networks">
+                    <div class="net">
+                        <a href="https://twitter.com/?lang=uk"><img class="netP" src="../graphicMaterials/twitter-white.png"></a>
+                    </div>
+                    <div class="net">
+                        <a href="https://uk-ua.facebook.com/"><img class="netP" src="../graphicMaterials/facebook_white.png"></a>
+                    </div>
+                    <div class="net">
+                        <a href="https://www.instagram.com/"><img class="netP" src="../graphicMaterials/instagram_white.png"></a>
+                    </div>
+                </div>
+                <div id="rights">Copyright @2021 All rights reserved | This template is made with love by Colorlib</div>
+                </footer>
+            </div>
+        </div>
+        <script src="/contact/contact.js"></script>
+    </body>
+</html>

@@ -1,0 +1,804 @@
+$color: rgb(255, 204, 0);
+
+body{
+    margin:0px;
+
+    #containerBig{
+        width: 100%;
+        height: 100vh;
+    
+        header{
+            width:100%;
+            height: 12%;
+            background-color: black;
+            position: absolute;
+            top: 0px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            z-index: 10;
+            font-family: 'Poppins', sans-serif;
+            
+            @media(max-width: 600px){
+                font-size: 12px;
+            }
+            a{
+                color: white;
+                text-decoration: none;
+            }
+            .menu :hover{
+                color: $color;
+            }
+            .logo-block{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                color: white;
+                position: relative;
+                height: 40px;
+                width: 100px;
+                text-align: right;
+                
+    
+                 :nth-child(2){
+                    font-family: 'Josefin Sans', sans-serif; 
+                    font-size: 20px;
+                    margin-right: 3px;
+
+                    @media(max-width: 600px){
+                        font-size: 14px;
+                    }
+                }
+                 :nth-child(3){
+                    font-size: 10px;
+                    color: $color;
+                    letter-spacing: 3px;
+
+                    @media(max-width: 600px){
+                        font-size: 10px;
+                        letter-spacing: 1px;
+                    }
+                }
+                .logo{
+                    position: absolute;
+                    height: 23px;
+                    width: 25px;
+                    left: 22px;
+                    top: 0px;
+
+                    @media(max-width: 600px){
+                        height: 18px;
+                        width: 18px;
+                        left: 15px;
+                    }
+
+                    @media (min-width: 600px)and(max-width: 700px){
+                        height: 18px;
+                        width: 18px;
+                        left: 20px;
+                    }
+                }
+                
+            }
+            .menu-block{
+                width: 500px;
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                color: white;
+            }
+        }
+    
+        main{
+            width:100%;
+            position: relative;
+            font-family: 'Poppins', sans-serif;
+            background-size: contain;
+
+            a{
+                text-decoration: none;
+            }
+
+            #container1{
+                width:100%;
+                height: 100vh;
+
+                @media(max-width: 760px){
+                    height: 80vh;
+                    font-size: 14px;
+                }
+
+                @media(max-width: 592px){
+                    font-size: 12px;
+                }
+                .slider{
+                    width:100%;
+                    height: 100%;
+                    position: relative;
+                    overflow: hidden;
+
+                    .btCont{
+                        position: absolute;
+                        z-index: 8;
+                        opacity: 50%;
+                        width: 100px;
+                        height: 100%;
+                    }
+                    #btCont2{
+                        right: 0px;
+                    }
+                    .btCont :hover{
+                        background-color: black;
+                        cursor: pointer;
+                    }
+                    .sliderPrev, .sliderNext{
+                        width: 100%;
+                        height: 100%;
+                    }
+                    button{
+                        height: 50px;
+                        width: 100px;
+                        border: 1px white solid;
+                        background: transparent;
+                        color: white;
+                        font-size: 16px;
+                    }
+                    .wrapper{
+                        height: 100%;
+                        position: relative;
+                        display: flex;
+                        transition: all 2s;
+
+                        .slide{
+                            flex-shrink: 0;
+                            width: 100%;
+                            a{
+                                color: white;
+                            }
+                            .items{
+                                display: flex;
+                                width: 80px;
+                                height: 20px;
+                                justify-content: space-between;
+                                align-items: center;
+                                position: absolute;
+
+                                .circle{
+                                    height: 20px;
+                                    width: 20px;
+                                    border-radius: 50%;
+                                    background-color: grey;
+
+                                    @media(max-width: 890px){
+                                        display: none;
+                                    }
+                                }
+                                #circle11,  #circle22,  #circle33{
+                                    background-color: white;
+                                }
+                            }
+                            .cover{
+                                background-color: rgba(0,0,0,0.3);
+                                position: absolute;
+                                height: 100%;
+                                width: 100%;
+                            }
+                            .slContainer{
+                                 
+                                .side{
+                                    .buttons{
+                                        :hover{
+                                            background-color: $color;
+                                            color: black;
+                                            border: black;
+                                        }
+                                    }
+                                    #delis{
+                                        font-family: 'Nothing You Could Do', cursive;
+                                        font-style: normal;
+                                        font-size: 30px;
+                                        color: $color;
+                                        letter-spacing: 2px;
+                                        margin-bottom: 10px;
+                                    }  
+                                    #cuiz{
+                                        font-family: 'Josefin Sans', sans-serif;
+                                        font-style: normal;
+                                        font-size: 35px;
+                                        margin-bottom: 25px;
+                                    }
+                                    #text1{
+                                        letter-spacing: 1px;
+                                        font-weight: 300;
+                                        margin-bottom: 35px;
+                                    }
+                                }
+                            }
+                        }
+                        #sl1{
+                            background-image: url(../graphicMaterials/bg_1.jpg);
+                            background-size: cover;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            flex-direction: column;
+
+                            #items1{
+                                bottom: 40px;
+                            }
+                            
+                            #slContainer1{
+                                position: relative;
+                                z-index: 2;
+                                width: 70%;
+                                height: 100%;
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                margin-top: 120px;
+                                margin-bottom: 60px;
+                                margin-right: 4%;
+                                #left1, #right1{
+                                    width: 50%;
+                                }
+                                #left2, #right2{
+                                    width: 50%;
+                                }
+                                #left1{
+                                    margin-right: 20px;
+                                    text-align: right;
+                                    color: white;
+                                }
+                                #right1{
+                                    #imagePizz{
+                                        width: 100%;
+                                        height: 100%;
+                                    }
+                                }
+                            }
+                        }
+                        #sl2{
+                            background-image: url(../graphicMaterials/bg_1.jpg);
+                            background-size: cover;
+                            color: white;
+
+                            #items2{
+                                bottom: 80px;
+                            }
+
+                            #slContainer2{
+                                position: relative;
+                                z-index: 2;
+                                height: 100%;
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                margin-top: 40px;
+                                margin-left: 17%;
+                                margin-right: 15%;
+
+                                #left2{
+
+                                    #imagePizz2{
+                                        width: 96%;
+                                        height: 96%;
+                                    }
+                                }
+                            }
+                        }
+
+                        #sl3{
+                            background-image: url(../graphicMaterials/bg_3.jpg);
+                            background-size: cover;
+                            color: white;
+
+                            #slContainer3{
+                                position: relative;
+                                z-index: 2;
+                                height: 100%;
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                flex-direction: column;
+                                text-align: center;
+
+                                .buttons{
+                                    :hover{
+                                        background-color: $color;
+                                        color: black;
+                                        border: black;
+                                    }
+                                }
+                                #delis{
+                                    font-family: 'Nothing You Could Do', cursive;
+                                    font-style: normal;
+                                    font-size: 30px;
+                                    color: $color;
+                                    letter-spacing: 2px;
+                                    margin-bottom: 10px;
+                                }
+                                #cuiz{
+                                    font-family: 'Josefin Sans', sans-serif;
+                                    font-style: normal;
+                                    font-size: 35px;
+                                    margin-bottom: 25px;
+                                }
+                                #text1{
+                                    letter-spacing: 1px;
+                                    font-weight: 300;
+                                    margin-bottom: 35px;
+                                }
+                                #items3{
+                                    bottom: 40px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            #container2{
+                margin-top: 1;
+                width:100%;
+                height: 450px;
+                background-image: url(../graphicMaterials/bg_2.jpg);
+                background-size: contain;
+
+                @media(max-width: 600px){
+                    height: 150px;
+                }
+
+                .cover2{
+                    background-color: rgba(0,0,0,0.7);
+                    position: absolute;
+                    height: 450px;
+                    width: 100%;
+                    z-index: 2;
+                    @media(max-width: 600px){
+                        height: 200px;
+                    }
+                }
+                #first, #second{
+                    width: 100%;
+                    display: flex;
+                }
+                #first{
+                    height: 50%; 
+                    @media(max-width: 600px){
+                        height: 80%
+                    }
+                }
+                #second{
+                    justify-content: space-around;
+                    align-items: center;
+                    z-index: 5;
+                    height: 50%;
+                    width: 90%;
+                    margin-left: 80px;
+                    color: white;
+
+                    @media(max-width: 600px){
+                        display: none;
+                    }
+
+                    @media(max-width: 1150px){
+                        margin-left: 50px;
+                    }
+
+                    @media(max-width: 800px){
+                        margin-left: 30px;
+                    }
+                    .cubeCont{
+                        width: 180px;
+                        z-index: 10;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        flex-direction: column;
+
+                        @media(max-width: 714px){
+                            font-size: 12px;
+                        }
+
+                        .cube{
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            height: 80px;
+                            width: 80px; 
+                            border: 1px solid $color;
+
+                            @media(max-width: 714px){
+                                height: 60px;
+                                width: 60px;
+                            }
+
+                            .imgC{
+                                height: 55px;
+                                width: 55px;
+                            }
+                        }
+                        .num{
+                            margin-top: 15px;
+                            margin-bottom: 5px;
+                            color: $color;
+                            font-size: 25px;
+
+                            @media(max-width: 714px){
+                                font-size: 15px;
+                            }
+                        }
+                    }
+                }
+                #first{
+                    .fImage{
+                        width: 25%;
+                        height: 100%;
+                        z-index: 5;
+                    }
+                    #fImage1{
+                        background-image: url(../graphicMaterials/gallery-1.jpg);
+                        background-size: contain;
+                        background-repeat: no-repeat;
+                    }
+                    #fImage2{
+                        background-image: url(../graphicMaterials/gallery-2.jpg);
+                        background-size: contain;
+                        background-repeat: no-repeat;
+                    }
+                    #fImage3{
+                        background-image: url(../graphicMaterials/gallery-3.jpg);
+                        background-size: contain;
+                        background-repeat: no-repeat;
+                    }
+                    #fImage4{
+                        background-image: url(Pizza-Layout/gallery-4.jpg);
+                        background-size: contain;
+                        background-repeat: no-repeat;
+                    }
+                }
+            }
+            #container3{
+                height: 90vh;
+                width: 100%;
+                background-image: url(../graphicMaterials/bg_4.jpg);
+                background-repeat: no-repeat;
+                display: flex;
+                justify-content: space-between;
+
+                @media(max-width: 570px){
+                    height: 90vh;
+                }
+                #pictureCont3{
+                    height: 85%;
+                    width: 40%;
+                    background-image: url(../graphicMaterials/about.jpg);
+                    background-repeat: no-repeat;
+
+                    @media(max-width: 882px){
+                        display: none;
+                    }
+                }
+                #cont3{
+                    width: 60%;
+                    height: 100%;
+                    padding-left: 50px;
+                    padding-top: 50px;
+                    padding-right: 100px;
+
+                    @media(max-width: 882px){
+                        width: 90%;
+                        padding-right: 50px;
+                    }
+
+                    .btList{
+                        width: 60%;
+                        display: flex;
+                        height: 50px;
+                        justify-content: space-around;
+
+                        :hover{
+                            background: $color;
+                            color: black;
+                            margin: black;
+                            cursor: pointer;
+                        }
+
+                        .btC3{
+                            width: 100px;
+                            background: transparent;
+                            border: 1px solid $color;
+                            color: $color;
+                            font-family: 'Poppins', sans-serif;
+                            font-size: 20px;
+                        }
+                    }
+
+                    #productList{
+                        margin-top: 100px;
+                        width: 100%;
+                        height: 200px;
+                        display: flex;
+                        color: white;
+                        text-align: center;
+
+                        @media(max-width: 980px){
+                            margin-top: 50px;
+                        }
+
+                        @media(max-width: 565px){
+                            font-size: 14px;
+                        }
+                        .product{
+                            display: flex;
+                            flex-direction: column;
+                            align-items: center;
+                            height: 500px;
+
+                            .buttons{
+                                :hover{
+                                    background-color: $color;
+                                    color: black;
+                                    border: black;
+                                    cursor: pointer;
+                                }
+                            }
+                           
+                            .imgPr{
+                                width: 140px;
+                                height: 130px;
+                                border-radius: 50%;
+                                overflow: hidden;
+                                margin-bottom: 20px;
+                            }
+                            #imgPr1{
+                                background-image: url(../graphicMaterials/pizza-1.jpg);
+                                background-size: contain;
+                            }
+                            #imgPr2{
+                                background-image: url(../graphicMaterials/pizza-2.jpg);
+                                background-size: contain;
+                            }
+                            #imgPr3{
+                                background-image: url(../graphicMaterials/pizza-3.png);
+                                background-size: contain;
+                            }
+
+                            .textPr{
+                                color: grey;
+                                margin-bottom: 15px;
+                            }
+                            .pricePr{
+                                color: $color;
+                                margin-bottom: 15px;
+                                font-size: 18px;
+                            }
+                            .btPr{
+                                height: 40px;
+                                width: 100px;
+                                background: transparent;
+                                color: white;
+                                border: 1px solid white;
+                                font-size: 16px;
+                            }
+                        }
+                       
+                    }
+                }
+            }
+        }
+    
+        footer{
+            height: 400px;
+            width: 84,5%;
+            background-color: black;
+            color: white;
+            padding: 70px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            font-family: 'Poppins', sans-serif;
+
+            @media(max-width: 968px){
+                font-size: 12px;
+            }
+            footer :hover{
+                color: $color;
+            }
+            
+            a{
+                color: white;
+                text-decoration: none;
+            }
+
+            #ftContext{
+                height: 65%;
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+                @media(max-width: 770px){
+                    width: 98%;
+                }
+            }
+            
+            #networks{
+                height: 40px;
+                width: 90%;
+                margin-top: 30px;
+                margin-bottom: 60px;
+                display: flex;
+
+                @media(max-width: 770px){
+                    display: none;
+                }
+
+                .net:hover{
+                    background-color: $color;
+                    cursor: pointer;
+                }
+
+                .net{
+                    width: 40px;
+                    height: 40px;
+                    border-radius: 50%;
+                    background-color: grey;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    margin-right: 15px;
+
+                    .netP{
+                        width: 60%;
+                        height: 60%;
+                        margin-left: 8px;
+                        margin-top: 5px;
+                    }
+                }
+            }
+
+            .itemFt{
+                width: 25%;
+                height: 100%;
+                color: white;
+
+                h2{
+                    font-size: 20px;
+                    margin-bottom: 40px;
+                }
+                #blockBlog2{
+                    padding-top: 10px;
+                }
+                .blockBlog{
+                    height: 130px;
+                    width: 100%;
+                    display: flex;
+                    #imgBlog1{
+                        background-image: url(Pizza-Layout/image_1.jpg);
+                        background-size: contain;
+                        background-repeat: no-repeat;
+                        @media(max-width: 878px){
+                            display: none;
+                        }
+                    }
+                    #imgBlog2{
+                        background-image: url(../graphicMaterials/image_2.jpg);
+                        background-size: contain;
+                        background-repeat: no-repeat;
+
+                        @media(max-width: 878px){
+                            display: none;
+                        }
+                    }
+                    .contextBlog{
+                        
+                         .hBlog{
+                            font-size: 12px;  
+                        }
+                        #hBlog2{
+                            @media(max-width: 877px){
+                                margin-top: 50px;
+                            }
+                            @media(max-width: 650px){
+                                margin-top: 10px;
+                            }
+                        }
+                        :hover{
+                            color: $color;
+                            cursor: pointer;
+                        }
+                        .commBlog{
+                            font-size: 12px;
+                            display: flex;
+                            color: grey;
+                            padding-top: 10px;
+                            justify-content: space-between;
+                            box-sizing: border-box; 
+
+                            @media(max-width: 650px){
+                                display: none;
+                            }
+                            .comm{
+                                display: flex;
+                            }
+                            .pictC{
+                                height: 10px;
+                                width: 10px; 
+                                margin-top: 3px;
+                                margin-right: 2px;
+                            }
+                        }
+                    }
+                   
+                    .imgBlog{
+                        width: 50%;
+                        height: 45%;
+                        margin-right: 10px;
+                    }
+                }
+                
+                #blockBlog2{
+                    margin-top: -40px;
+                }
+            }
+            #itemFt1{
+                h2 :hover{
+                    color: $color;
+                }
+            }
+            #itemFt2{
+                div :hover{
+                    color: $color;
+                }
+            }
+
+            #itemFt3{
+                width: 10%;
+                @media(max-width: 770px){
+                    display: none;
+                }
+
+                 :hover{
+                    color: $color;
+                }
+                .services{
+                    margin-bottom: 10px;
+                }
+            }
+            #itemFt4 {
+                h2{
+                    text-align: right;
+                    margin-right: 25px;
+                }
+                :hover{
+                    color: $color;
+                }
+                .q{
+                    display: flex;
+                    color: white;
+                    margin-bottom: 10px;
+                    display: flex;
+
+                    .fp{
+                        height: 15px;
+                        width: 15px;
+                        margin-top: 5px;
+                        margin-right: 15px;
+                    }
+                }
+                #mailto{
+                    @media(max-width: 770px){
+                        display: none;
+                    }
+                }
+            }
+            #rights{
+                font-size: 14px;
+                @media(max-width: 770px){
+                    display: none;
+                }
+            }
+        }
+    }
+}
